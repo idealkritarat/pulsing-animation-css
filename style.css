@@ -1,0 +1,26 @@
+.pulse::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 4rem;
+    height: 4rem;
+    background-color: #40A5EE;
+    opacity: 50%;
+    animation: pulse 1.2s infinite linear;
+    mask-image: radial-gradient(transparent,black);
+    z-index: -10;
+}
+
+@keyframes pulse {
+    0% {
+        width: 10rem;
+        height: 10rem;
+    }
+    100% {
+        width: 30rem;
+        height: 30rem;
+    }
+}
